@@ -12,7 +12,6 @@ When('Wprowadź w polu Imię:', (datatable) => {
     })
 })
 
-
 When('Wprowadź w polu Nazwisko:', (datatable) => {
     datatable.hashes().forEach(element => {
     cy.get("input[name='fields[1][2]']").should('be.visible').type(element.nazwisko).wait(600)
