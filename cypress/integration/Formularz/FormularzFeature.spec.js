@@ -8,14 +8,14 @@ Given('Uzytkowanik jestem na stronie formularza',() => {
 
 When('Wprowadź w polu Imię:', (datatable) => {
     datatable.hashes().forEach(element => {
-        cy.get("input[name='fields[1][1]']").should('be.visible').type(element.imie).wait(600)
+    cy.get("input[name='fields[1][1]']").should('be.visible').type(element.imie).wait(600)
     })
 })
 
 
 When('Wprowadź w polu Nazwisko:', (datatable) => {
     datatable.hashes().forEach(element => {
-        cy.get("input[name='fields[1][2]']").should('be.visible').type(element.nazwisko).wait(600)
+    cy.get("input[name='fields[1][2]']").should('be.visible').type(element.nazwisko).wait(600)
     })
 })
 
@@ -25,13 +25,13 @@ When('Zaznacz w polu Płeć: kobieta', () => {
 
 When('Wprowadź w polu Pesel:', (datatable) => {
     datatable.hashes().forEach(element => {
-        cy.get("input[name='fields[1][4]']").should('be.visible').type(element.pesel).wait(600)
+    cy.get("input[name='fields[1][4]']").should('be.visible').type(element.pesel).wait(600)
     })
 })
 
 When('Wprowadź w polu NIP:', (datatable) => {
     datatable.hashes().forEach(element => {
-        cy.get("input[name='fields[1][70]']").should('be.visible').type(element.nip).wait(600)
+    cy.get("input[name='fields[1][70]']").should('be.visible').type(element.nip).wait(600)
     })
 })
 
@@ -47,7 +47,7 @@ When('Załącz plik skanu dyplomu', () => {
 
 When('Wprowadź w pole Numer prawa wykonywania zawodu lekarza:', (datatable) => {
     datatable.hashes().forEach(element => {
-        cy.get("input[id='id_1_6']").should('be.visible').type(element.nrZawodu).wait(600)
+    cy.get("input[id='id_1_6']").should('be.visible').type(element.nrZawodu).wait(600)
     })
 })
 
@@ -57,7 +57,7 @@ When('Zaznacz tak w polu Jestem osobą zatrudnioną bez względu na formę zatru
 
 When('Wprowadź w polu Nazwa i adres poz:', (datatable) => {
     datatable.hashes().forEach(element => {
-        cy.get("#id_1_9").should('be.visible').type(element.adresPoz).wait(600)
+    cy.get("#id_1_9").should('be.visible').type(element.adresPoz).wait(600)
     })
 })
 
